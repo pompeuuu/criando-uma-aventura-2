@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        </head>
+    <title>pererinha na galinha </title>
+    <main>
+        <div class="passo ativo" id="passo-0">
+    <img src="cenario-passo0.png" alt="">
+    <p>você deseja jogar sr.lobo</p>
+    <button class="btn-proximo" data-proximo="1">sim</button>
+    <button class="btn-proximo" data-proximo="0">não</button>
+
+</div>
+    <div class="passo" id="passo-1">
+        <img src="cenario-passo1.png" alt="">
+        <p>você acorda no meio de uma floresta perdido</p>
+        <button class="btn-proximo" data-proximo="3">gritar por ajuda</button>
+        <button class="btn-proximo" data-proximo="4">procurar um lugar seguro'</button>
+
+    </div>
+    <div class="passo" id="passo-4">
+        <img src="cenario-passo2.png" alt="">
+        <p>Você encontrou uma barraca no meio do nada</p>
+            <button class="btn-proximo" data-proximo="5">entrar</button>
+    </div>
+    <div class="passo" id="passo-3">
+        <img src="cenario-passo3.png" alt="">
+        <p>você gritou tanto por ajuda que o sr.lobo te encontrou perdido, então ele te oferece ajuda</p>
+        <button class="btn-proximo" data-proximo="8">aceitar</button>
+        <button class="btn-proximo" data-proximo="10">recusar por medo dele</button>
+    </div>
+
+    <div class="passo" id="passo-5">
+        <img src="cenario-passo5.png" alt="">
+        <p>depois de entrar você encontra o sr.lobo la dentro</p>
+        <button class="btn-proximo" data-proximo="7">conversar com ele</button>
+        <button class="btn-proximo" data-proximo="11">fugir de medo</button>
+    </div>
+    <div class="passo" id="passo-8">
+        <img src="cenario-passo6.png" alt="">
+        <p>ele diz que conhece um lugar na região que é seguro e pergunta se você quer ir até lá</p>
+        <button class="btn-proximo" data-proximo="12">ir com ele</button>
+        <button class="btn-proximo" data-proximo="10">recusar e dizer que prefere ir sozinho</button>
+    </div>
+
+    <div class="passo" id="passo-7">
+        <img src="cenario-passo7.png" alt="">
+        <p>você explica o que aconteceu e pede ajuda para sair de la, então ele diz que sabe conhece um lugar ali por perto e fala que vai te levar la</p>
+        <button class="btn-proximo" data-proximo="12">ir com ele</button>
+        <button class="btn-proximo" data-proximo="10">recusar e dizer que prefere ir sozinho</button>
+    </div>
+
+    <div class="passo" id="passo-10">
+        <p>ele não permite que você va sozinho e começa a te perseguir</p>
+        <button class="btn-proximo" data-proximo="11">tentar fugir</button>
+    </div>
+
+    <div class="passo" id="passo-11">
+        <img src="cenario-passo11.png" alt="">
+        <p>ele é um lobo, então ele te alcançou e você morreu</p>
+        <button class="btn-proximo" data-proximo="0">reiniciar</button>
+        
+    </div>
+
+    <div class="passo" id="passo-12">
+        <img src="cenario-passo5.png" alt="">
+        <p>ele na verdade te levou para a floresta novamente e te matou</p>
+        <button class="btn-proximo" data-proximo="0">reniciar</button>
+    </div>
+
+</main>
+     <script src="script.js"></script>
+</html>
+</body>
